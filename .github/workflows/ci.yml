@@ -14,9 +14,9 @@ permissions:
 
 jobs:
   validate:
-    name: Typecheck and production build
+    name: Typecheck, tests and production build
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -33,5 +33,8 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
-      - name: Build
+      - name: Unit and component tests
+        run: npm test
+
+      - name: Production build
         run: npm run build
