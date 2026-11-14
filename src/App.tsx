@@ -3,7 +3,7 @@ import {
   Activity, ArrowDownRight, ArrowUpRight, Bell, Bot, CalendarDays,
   Check, ChevronDown, ChevronRight, CircleHelp, Command, CreditCard,
   Globe2, LayoutDashboard, LifeBuoy, MessageCircle, MoreHorizontal,
-  PanelLeftClose, Plus, Search, Settings2, ShieldCheck, Sparkles,
+  PanelLeftClose, Plus, Search, Settings2, Sparkles,
   Users, Workflow, Zap
 } from "lucide-react";
 
