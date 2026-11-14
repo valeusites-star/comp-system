@@ -17,7 +17,10 @@ describe("COMP SYSTEM workspace shell", () => {
   it("opens the selected module preview when a navigation item is clicked", () => {
     render(<App />);
 
-    fireEvent.click(screen.getByRole("button", { name: /Agentes de IA/i }));
+    const agentsNavigation = screen.getAllByRole("button", {
+      name: /Agentes de IA/i,
+    })[0];
+    fireEvent.click(agentsNavigation);
 
     expect(
       screen.getByText(/Esta área está representada nesta prévia/i)
