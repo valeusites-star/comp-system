@@ -27,7 +27,7 @@ describe("COMP SYSTEM workspace shell", () => {
   it("allows the sidebar to collapse and expand", () => {
     render(<App />);
 
-    const toggle = screen.getByRole("button", { name: "Recolher menu" });
+    const toggle = screen.getAllByRole("button", { name: "Recolher menu" })[0];
     fireEvent.click(toggle);
 
     expect(screen.getByTitle("Visão geral")).toBeTruthy();
