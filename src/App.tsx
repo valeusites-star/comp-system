@@ -97,11 +97,31 @@ function App() {
         <div className="page-content">
           <section className="welcome-row">
             <div>
-              <div className="eyebrow"><span /> PAINEL DE CONTROLE</div>
+              <div className="eyebrow"><span /> CENTRAL DE COMANDO</div>
               <h1>Bom dia, Eric <b>✦</b></h1>
-              <p>Acompanhe sua operação e mantenha tudo em movimento.</p>
+              <p>Uma visão clara do que acontece na sua operação — e do que merece sua atenção.</p>
             </div>
             <button className="primary-button" onClick={() => setActive("Agentes de IA")}><Plus size={17} /> Explorar agentes</button>
+          </section>
+
+          <section className="command-center">
+            <div className="command-copy">
+              <div className="command-kicker"><Sparkles size={14} /> COMP INTELLIGENCE <span>CAMADA DE INTELIGÊNCIA</span></div>
+              <h2>Seu negócio em movimento.<br/><em>Sua inteligência no controle.</em></h2>
+              <p>Centralize equipes, agentes e processos em um único espaço de trabalho.</p>
+              <div className="command-actions">
+                <button onClick={() => setActive("Agentes de IA")}>Conhecer agentes <ArrowUpRight size={15}/></button>
+                <span><i/> Plataforma em evolução</span>
+              </div>
+            </div>
+            <div className="command-visual" aria-hidden="true">
+              <div className="orbit orbit-one"/><div className="orbit orbit-two"/>
+              <div className="core-glow"><Sparkles size={27}/></div>
+              <div className="orbit-node node-one"><Bot size={16}/></div>
+              <div className="orbit-node node-two"><Workflow size={16}/></div>
+              <div className="orbit-node node-three"><Activity size={16}/></div>
+              <div className="orbit-label">INTELLIGENCE<br/><strong>CORE</strong></div>
+            </div>
           </section>
 
           {active !== "Visão geral" && <div className="prototype-alert"><Sparkles size={17} /><div><strong>{active}</strong><span>Esta área está representada nesta prévia. A funcionalidade será implementada na respectiva etapa do produto.</span></div></div>}
